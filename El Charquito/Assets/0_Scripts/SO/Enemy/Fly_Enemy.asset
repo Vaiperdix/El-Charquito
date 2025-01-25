@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fly_Enemy
   m_EditorClassIdentifier: 
   _isFLyer: 1
-  _isDynamic: 1
+  _isDynamic: 0
   _moveSpeed: 5
   _maxDetectableArea: {x: -2, y: 2}
   _chaseTime: 5

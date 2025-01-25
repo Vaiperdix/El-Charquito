@@ -73,7 +73,6 @@ public class EnemyController : MonoBehaviour
                     pos.y = _spawnPos.y;
                     transform.position = pos;
                 }
-                Walk();
             }
             else
             {
@@ -89,8 +88,8 @@ public class EnemyController : MonoBehaviour
                         _moveYDirection = -1;
                     }
                 }
-                Fly();
             }
+            Guard();
         }
         else
         {
@@ -98,10 +97,11 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    protected void Walk()
+    protected void Guard()
     {
         if (_enemy_SO.ISDynamic)
         {
+            _animator.SetBool("isMoving", true);
             if (_destinationPos == _enemy_SO.MaxDetectableArea.x)
             {
                 _moveXDirection = -1;
@@ -122,37 +122,42 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
+            _animator.SetBool("isMoving", false);
             _moveYDirection = 0;
+            _moveXDirection = 0;
         }
     }
 
-    protected void Fly()
-    {
-        if (_enemy_SO.ISDynamic)
-        {
-            if (_destinationPos == _enemy_SO.MaxDetectableArea.x)
-            {
-                _moveXDirection = -1;
-            }
-            else
-            {
-                _moveXDirection = 1;
-            }
+    //protected void Fly()
+    //{
+    //    if (_enemy_SO.ISDynamic)
+    //    {
+    //        _animator.SetBool("isMoving", true);
+    //        if (_destinationPos == _enemy_SO.MaxDetectableArea.x)
+    //        {
+    //            _moveXDirection = -1;
+    //        }
+    //        else
+    //        {
+    //            _moveXDirection = 1;
+    //        }
 
-            if (transform.position.x <= _enemy_SO.MaxDetectableArea.x)
-            {
-                _destinationPos = _enemy_SO.MaxDetectableArea.y;
-            }
-            else if (transform.position.x >= _enemy_SO.MaxDetectableArea.y)
-            {
-                _destinationPos = _enemy_SO.MaxDetectableArea.x;
-            }
-        }
-        else
-        {
-            _moveYDirection = 0;
-        }
-    }
+    //        if (transform.position.x <= _enemy_SO.MaxDetectableArea.x)
+    //        {
+    //            _destinationPos = _enemy_SO.MaxDetectableArea.y;
+    //        }
+    //        else if (transform.position.x >= _enemy_SO.MaxDetectableArea.y)
+    //        {
+    //            _destinationPos = _enemy_SO.MaxDetectableArea.x;
+    //        }
+    //    }
+    //    else
+    //    {
+    //        _animator.SetBool("isMoving", false);
+    //        _moveYDirection = 0;
+    //        _moveXDirection = 0;
+    //    }
+    //}
 
     protected void Chase()
     {
