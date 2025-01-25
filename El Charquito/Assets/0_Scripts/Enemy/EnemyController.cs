@@ -24,11 +24,12 @@ public class EnemyController : MonoBehaviour
     Vector2 _origin = Vector2.zero;
     float _distance = 0;
 
-    [SerializeField] protected Animator _animator;
+    Animator _animator;
 
     protected void Awaking()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
     }
 
     protected void Starting()
@@ -54,29 +55,42 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-            _origin = new Vector2(transform.position.y, transform.position.y);
+            _origin = new Vector2(transform.position.x, transform.position.y);
             _distance /= 2;
         }
     }
 
     #region Update
-    protected void WalkOrChase()
+    protected void GuardOrChase()
     {
         if (!_isPlayerInArea && !_ischasing)
         {
-            Walk();
-        }
-        else
-        {
-            Chase();
-        }
-    }
-
-    protected void FlyOrChase()
-    {
-        if (!_isPlayerInArea && !_ischasing)
-        {
-            Fly();
+            if (!_enemy_SO.IsFLyer)
+            {
+                if (transform.position.y != _spawnPos.y)
+                {
+                    Vector3 pos = transform.position;
+                    pos.y = _spawnPos.y;
+                    transform.position = pos;
+                }
+                Walk();
+            }
+            else
+            {
+                {
+                    Vector3 myPos = transform.position;
+                    float toYPos = _spawnPos.y - myPos.y;
+                    if (toYPos > 0)
+                    {
+                        _moveYDirection = 1;
+                    }
+                    else
+                    {
+                        _moveYDirection = -1;
+                    }
+                }
+                Fly();
+            }
         }
         else
         {
@@ -142,32 +156,31 @@ public class EnemyController : MonoBehaviour
 
     protected void Chase()
     {
-        _moveXDirection = 0;
+        Vector3 playerPos = PlayerController.Instance.gameObject.transform.position;
+        Vector3 myPos = transform.position;
+
         if (_enemy_SO.IsFLyer)
         {
-            //float myPos = transform.position.y;
-            //float playerPos = PlayerController.Instance.gameobject.transform.position.y;
-            //float toPos = myPos - playerPos;
-            //if (myPos > toPos)
-            //{
-            //    _moveYDirection = -1;
-            //}
-            //else
-            //{
-            //    _moveYDirection = 1;
-            //}
+            float toYPos = playerPos.y - myPos.y;
+            if (toYPos > 0)
+            {
+                _moveYDirection = 1;
+            }
+            else
+            {
+                _moveYDirection = -1;
+            }
         }
-        //float myPos = transform.position.x;
-        //float playerPos = PlayerController.Instance.gameobject.transform.position.x;
-        //float toPos = myPos - playerPos;
-        //if (myPos > toPos)
-        //{
-        //    _moveXDirection = -1;
-        //}
-        //else
-        //{
-        //    _moveXDirection = 1;
-        //}
+
+        float toXPos = playerPos.x - myPos.x;
+        if (toXPos > 0)
+        {
+            _moveXDirection = 1;
+        }
+        else
+        {
+            _moveXDirection = -1;
+        }
     }
     #endregion
 
@@ -246,7 +259,7 @@ public class EnemyController : MonoBehaviour
     {
         _ischasing = false;
         _isPlayerInArea = false;
-        SFXController.Instance.Explosion(transform.position);
+        //SFXController.Instance.Explosion(transform.position);
         gameObject.SetActive(false);
     }
 
