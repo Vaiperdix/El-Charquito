@@ -150,6 +150,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc20aaf4db0a4b4ca2c9837c8ad6830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FollowSpeed: 2
+  FollowSpeed: 4
   yOffset: 1
-  target: {fileID: 3729686267245089214, guid: b5ee9f978f23f3c428410a973525ec95, type: 3}
+  target: {fileID: 0}
