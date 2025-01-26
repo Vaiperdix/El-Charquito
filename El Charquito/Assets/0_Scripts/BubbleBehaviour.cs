@@ -32,12 +32,13 @@ public class BubbleBehaviour : MonoBehaviour
     {
         if(gameObject.activeSelf)
         {
-            
+
         }
     }
 
     public void shootBubble(int direction)
     {
+        _rigidbody2D = GetComponent<Rigidbody2D>();
         _rigidbody2D.linearVelocityX = direction * _moveSpeedX;
         _rigidbody2D.linearVelocityY = _moveSpeedY;
         _movementDirection = direction;

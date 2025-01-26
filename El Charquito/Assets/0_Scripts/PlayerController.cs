@@ -11,14 +11,19 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float _originalMoveSpeed;
     [SerializeField] float _speedIncrease;
     [SerializeField] int _accelerationLimit;
-    [SerializeField] float _jumpSpeed;
+    [SerializeField] float _jumpSpeed = 3.5f;
+    private bool _jumpMarker = false;
+    [SerializeField] bool _onAirMarker = false;
     private float _moveSpeed;
     private int _accelerationState;
     [SerializeField] ObjectPooler _bubblesPool;
     private int _lookingDirection;
     
 
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        _onAirMarker = false;
+    }
     private bool sameDirection(){
         if ( ((_modeDirection==-1)&&(Input.GetKey(KeyCode.A))) || ((_modeDirection==0)&&(!Input.GetKey(KeyCode.A))&&(!Input.GetKey(KeyCode.D))) || ((_modeDirection==1)&&(Input.GetKey(KeyCode.D))))
             return true;
@@ -79,6 +84,10 @@ public class PlayerController : MonoBehaviour
             _moveSpeed = _originalMoveSpeed;
             _accelerationState = 0;
         }
+        if (Input.GetKey(KeyCode.W))
+        {
+            _jumpMarker = true;
+        }
         if (Input.GetKey(KeyCode.Space))
         {
             shooting();
@@ -87,5 +96,11 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         _rigidbody2D.linearVelocityX = _modeDirection * _moveSpeed;
+        if (_jumpMarker && !_onAirMarker)
+        {
+            _onAirMarker = true;
+            _rigidbody2D.linearVelocityY = _jumpSpeed;
+            _jumpMarker = false;
+        }
     }
 }

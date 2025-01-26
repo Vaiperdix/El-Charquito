@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7089994622780752728}
   - component: {fileID: 5287020250687181845}
   - component: {fileID: 2471876304750798358}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -161,7 +161,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &2471876304750798358
 MonoBehaviour:
@@ -178,4 +178,5 @@ MonoBehaviour:
   _originalMoveSpeed: 2
   _speedIncrease: 0.3
   _accelerationLimit: 90
-  _jumpSpeed: 0
+  _jumpSpeed: 3
+  _bubblesPool: {fileID: 0}
