@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class ObjectPooler : MonoBehaviour
 {
     public GameObject prefab;
-    private int _poolSize;
+    [SerializeField] int _poolSize;
     private List<GameObject> _pool = new List<GameObject>();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -31,7 +31,7 @@ public class ObjectPooler : MonoBehaviour
     }
     private GameObject createNewObj()
     {
-        GameObject obj = Instantiate(prefab,Vector2.zero,Quaternion.identity);
+        GameObject obj = Instantiate(prefab,transform);
         obj.SetActive(false);
         return obj;
     }

@@ -178,3 +178,4 @@ MonoBehaviour:
   _originalMoveSpeed: 2
   _speedIncrease: 0.3
   _accelerationLimit: 90
+  _jumpSpeed: 0

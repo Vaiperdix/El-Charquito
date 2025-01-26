@@ -11,8 +11,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float _originalMoveSpeed;
     [SerializeField] float _speedIncrease;
     [SerializeField] int _accelerationLimit;
+    [SerializeField] float _jumpSpeed;
     private float _moveSpeed;
     private int _accelerationState;
+    [SerializeField] ObjectPooler _bubblesPool;
+    private int _lookingDirection;
+    
 
 
     private bool sameDirection(){
@@ -20,6 +24,15 @@ public class PlayerController : MonoBehaviour
             return true;
         return false;
     }
+
+    private void shooting(){
+        GameObject bubble = _bubblesPool.GetPooledObject();
+        bubble.transform.position = transform.position;
+        bubble.SetActive(true);
+        BubbleBehaviour script = bubble.GetComponent<BubbleBehaviour>();
+        script.shootBubble(_lookingDirection);
+    }
+    
     private void Awake()
     {
         if (Instance == null)
@@ -51,11 +64,13 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKey(KeyCode.A))
             {
                 _modeDirection = -1;
+                _lookingDirection = -1;
 
             }
             else if (Input.GetKey(KeyCode.D))
             {
                 _modeDirection = 1;
+                _lookingDirection = 1;
             }
             else
             {
@@ -63,6 +78,10 @@ public class PlayerController : MonoBehaviour
             }
             _moveSpeed = _originalMoveSpeed;
             _accelerationState = 0;
+        }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            shooting();
         }
     }
     private void FixedUpdate()

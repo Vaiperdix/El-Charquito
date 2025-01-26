@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Obstacle
   - Hell
+  - Bubble
   layers:
   - Default
   - TransparentFX
