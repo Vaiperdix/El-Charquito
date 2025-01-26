@@ -1,0 +1,558 @@
+fileFormatVersion: 2
+guid: bfc72bd1f8b78fc40bc4d7eccc23feb0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8007069136221742435
+    second: Burbuja disparo potenciado_0
+  - first:
+      213: -8944364526136080887
+    second: Burbuja disparo potenciado_1
+  - first:
+      213: 1432779990019043396
+    second: Burbuja disparo potenciado_2
+  - first:
+      213: 2039866815005845599
+    second: Burbuja disparo potenciado_3
+  - first:
+      213: 6177423055907580328
+    second: Burbuja disparo potenciado_4
+  - first:
+      213: 5073586676099963634
+    second: Burbuja disparo potenciado_5
+  - first:
+      213: 2713469141190037798
+    second: Burbuja disparo potenciado_6
+  - first:
+      213: 268994192504150313
+    second: Burbuja disparo potenciado_7
+  - first:
+      213: 5349412822784144351
+    second: Burbuja disparo potenciado_8
+  - first:
+      213: -4620511457977221058
+    second: Burbuja disparo potenciado_9
+  - first:
+      213: 4232304154736983151
+    second: Burbuja disparo potenciado_10
+  - first:
+      213: 7976504032299201982
+    second: Burbuja disparo potenciado_11
+  - first:
+      213: -8999157798513217921
+    second: Burbuja disparo potenciado_12
+  - first:
+      213: 6654207228144877990
+    second: Burbuja disparo potenciado_13
+  - first:
+      213: -8301749306654392844
+    second: Burbuja disparo potenciado_14
+  - first:
+      213: -4975444025178907344
+    second: Burbuja disparo potenciado_15
+  - first:
+      213: -4080273094560569327
+    second: Burbuja disparo potenciado_16
+  - first:
+      213: -1952753251977607960
+    second: Burbuja disparo potenciado_17
+  - first:
+      213: 5458464622007296871
+    second: Burbuja disparo potenciado_18
+  - first:
+      213: 7519579991777042356
+    second: Burbuja disparo potenciado_19
+  - first:
+      213: -305762401850072246
+    second: Burbuja disparo potenciado_20
+  - first:
+      213: -2301061544736973558
+    second: Burbuja disparo potenciado_21
+  - first:
+      213: -9161506477848463847
+    second: Burbuja disparo potenciado_22
+  - first:
+      213: 5106012580472682679
+    second: Burbuja disparo potenciado_23
+  - first:
+      213: 9028959352011946460
+    second: Burbuja disparo potenciado_24
+  - first:
+      213: 4226946208950273449
+    second: Burbuja disparo potenciado_25
+  - first:
+      213: 146874121661035026
+    second: Burbuja disparo potenciado_26
+  - first:
+      213: -630765452679946704
+    second: Burbuja disparo potenciado_27
+  - first:
+      213: 4235416325632301592
+    second: Burbuja disparo potenciado_28
+  - first:
+      213: -7521509099914428755
+    second: Burbuja disparo potenciado_29
+  - first:
+      213: 3662344109408041967
+    second: Burbuja disparo potenciado_30
+  - first:
+      213: 8105324059532092692
+    second: Burbuja disparo potenciado_31
+  - first:
+      213: -8865153933446654814
+    second: Burbuja disparo potenciado_32
+  - first:
+      213: -6716255950690001151
+    second: Burbuja disparo potenciado_33
+  - first:
+      213: 8134561986796632143
+    second: Burbuja disparo potenciado_34
+  - first:
+      213: 7555917693707947072
+    second: Burbuja disparo potenciado_35
+  - first:
+      213: -111936198621699312
+    second: Burbuja disparo potenciado_36
+  - first:
+      213: -4209015507525518057
+    second: Burbuja disparo potenciado_37
+  - first:
+      213: -8234293108096640172
+    second: Burbuja disparo potenciado_38
+  - first:
+      213: 3730848403335122530
+    second: Burbuja disparo potenciado_39
+  - first:
+      213: 852082471572870776
+    second: Burbuja disparo potenciado_40
+  - first:
+      213: -2493992747220691236
+    second: Burbuja disparo potenciado_41
+  - first:
+      213: -6633413198636824022
+    second: Burbuja disparo potenciado_42
+  - first:
+      213: -4666529924377704054
+    second: Burbuja disparo potenciado_43
+  - first:
+      213: 6866910433366173075
+    second: Burbuja disparo potenciado_44
+  - first:
+      213: 8289357226736919799
+    second: Burbuja disparo potenciado_45
+  - first:
+      213: 7365266551061938271
+    second: Burbuja disparo potenciado_46
+  - first:
+      213: -2167098342849051458
+    second: Burbuja disparo potenciado_47
+  - first:
+      213: 6557121985310216293
+    second: Burbuja disparo potenciado_48
+  - first:
+      213: 2615449747143551385
+    second: Burbuja disparo potenciado_49
+  - first:
+      213: -3508702724884697526
+    second: Burbuja disparo potenciado_50
+  - first:
+      213: 1584035746185149753
+    second: Burbuja disparo potenciado_51
+  - first:
+      213: -4852468554347588370
+    second: Burbuja disparo potenciado_52
+  - first:
+      213: -3673517869212610117
+    second: Burbuja disparo potenciado_53
+  - first:
+      213: 8054421141292854944
+    second: Burbuja disparo potenciado_54
+  - first:
+      213: -5545452480225521353
+    second: Burbuja disparo potenciado_55
+  - first:
+      213: 8662346858354328854
+    second: Burbuja disparo potenciado_56
+  - first:
+      213: 7149153040632676382
+    second: Burbuja disparo potenciado_57
+  - first:
+      213: 7400821804658120297
+    second: Burbuja disparo potenciado_58
+  - first:
+      213: -138121945775893007
+    second: Burbuja disparo potenciado_59
+  - first:
+      213: 1792271876338036108
+    second: Burbuja disparo potenciado_60
+  - first:
+      213: 2467905257016043959
+    second: Burbuja disparo potenciado_61
+  - first:
+      213: 1094473986627443685
+    second: Burbuja disparo potenciado_62
+  - first:
+      213: 4661552820933687663
+    second: Burbuja disparo potenciado_63
+  - first:
+      213: -8707610043990447577
+    second: Burbuja disparo potenciado_64
+  - first:
+      213: 6506285837055354371
+    second: Burbuja disparo potenciado_65
+  - first:
+      213: -3372781499569354542
+    second: Burbuja disparo potenciado_66
+  - first:
+      213: 3786072824832864326
+    second: Burbuja disparo potenciado_67
+  - first:
+      213: -567791003745926424
+    second: Burbuja disparo potenciado_68
+  - first:
+      213: -2629818482976696480
+    second: Burbuja disparo potenciado_69
+  - first:
+      213: -7211853122450073667
+    second: Burbuja disparo potenciado_70
+  - first:
+      213: -2459473217068339126
+    second: Burbuja disparo potenciado_71
+  - first:
+      213: -7991838180286503509
+    second: Burbuja disparo potenciado_72
+  - first:
+      213: 7132956004987469010
+    second: Burbuja disparo potenciado_73
+  - first:
+      213: -6962645172725540514
+    second: Burbuja disparo potenciado_74
+  - first:
+      213: 6394452861477334634
+    second: Burbuja disparo potenciado_75
+  - first:
+      213: 7792717035870525770
+    second: Burbuja disparo potenciado_76
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Burbuja disparo potenciado_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a528b3b0d21e090800000000000000
+      internalID: -8007069136221742435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burbuja disparo potenciado_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906cd0e4adb3fd380800000000000000
+      internalID: -8944364526136080887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burbuja disparo potenciado_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4407f5a4fc142e310800000000000000
+      internalID: 1432779990019043396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burbuja disparo potenciado_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f58e7818f001f4c10800000000000000
+      internalID: 2039866815005845599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burbuja disparo potenciado_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9edaa3a8d9ab550800000000000000
+      internalID: 6177423055907580328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burbuja disparo potenciado_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fad71e6330096640800000000000000
+      internalID: 5073586676099963634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burbuja disparo potenciado_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621dd9daecd28a520800000000000000
+      internalID: 2713469141190037798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burbuja disparo potenciado_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9295adafac8abb300800000000000000
+      internalID: 268994192504150313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0113652dacbcfa343b0d722880a24b3b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Burbuja disparo potenciado_0: -8007069136221742435
+      Burbuja disparo potenciado_1: -8944364526136080887
+      Burbuja disparo potenciado_2: 1432779990019043396
+      Burbuja disparo potenciado_3: 2039866815005845599
+      Burbuja disparo potenciado_4: 6177423055907580328
+      Burbuja disparo potenciado_5: 5073586676099963634
+      Burbuja disparo potenciado_6: 2713469141190037798
+      Burbuja disparo potenciado_7: 268994192504150313
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

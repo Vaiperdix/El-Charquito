@@ -17,3 +17,4 @@ MonoBehaviour:
   _moveSpeed: 5
   _maxDetectableArea: {x: -5, y: 5}
   _chaseTime: 5
+  _life: 1

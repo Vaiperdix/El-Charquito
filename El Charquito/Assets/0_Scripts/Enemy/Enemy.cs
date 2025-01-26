@@ -29,9 +29,14 @@ public class Enemy : EnemyController
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Bubble") || collision.collider.CompareTag("Hell"))
+        if (collision.collider.CompareTag("Bubble"))
         {
-            Die();
+            Die(1);
+        }
+
+        if (collision.collider.CompareTag("Hell"))
+        {
+            Die(100);
         }
     }
 }
