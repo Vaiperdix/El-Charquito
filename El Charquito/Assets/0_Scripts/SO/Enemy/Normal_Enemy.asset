@@ -15,6 +15,6 @@ MonoBehaviour:
   _isFLyer: 0
   _isDynamic: 1
   _moveSpeed: 5
-  _maxDetectableArea: {x: -5, y: 5}
-  _chaseTime: 5
-  _life: 1
+  _maxDetectableArea: {x: 0, y: 7}
+  _chaseTime: 3
+  _life: 3

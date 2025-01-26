@@ -53,7 +53,7 @@ public class EnemyController : MonoBehaviour
         else
         {
             _origin = new Vector2(transform.position.x, transform.position.y);
-            _distance /= 2;
+            _distance = (_enemy_SO.MaxDetectableArea.y - _enemy_SO.MaxDetectableArea.x) / 2;
         }
     }
 
