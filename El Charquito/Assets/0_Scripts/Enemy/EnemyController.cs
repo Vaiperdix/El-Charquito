@@ -24,15 +24,21 @@ public class EnemyController : MonoBehaviour
     Vector2 _origin = Vector2.zero;
     float _distance = 0;
 
-    [SerializeField] protected Animator _animator;
+    Animator _animator;
+    [Header("Life")]
+    int _currentLife = 0;
+    SpriteRenderer _spriteRenderer;
 
     protected void Awaking()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     protected void Starting()
     {
+        _currentLife = _enemy_SO.Life;
         _spawnPos = transform.position;
 
         _destinationPos = _enemy_SO.MaxDetectableArea.x;
@@ -54,17 +60,41 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-            _origin = new Vector2(transform.position.y, transform.position.y);
+            _origin = new Vector2(transform.position.x, transform.position.y);
             _distance /= 2;
         }
     }
 
     #region Update
-    protected void WalkOrChase()
+    protected void GuardOrChase()
     {
         if (!_isPlayerInArea && !_ischasing)
         {
-            Walk();
+            if (!_enemy_SO.IsFLyer)
+            {
+                if (transform.position.y != _spawnPos.y)
+                {
+                    Vector3 pos = transform.position;
+                    pos.y = _spawnPos.y;
+                    transform.position = pos;
+                }
+            }
+            else
+            {
+                {
+                    Vector3 myPos = transform.position;
+                    float toYPos = _spawnPos.y - myPos.y;
+                    if (toYPos > 0)
+                    {
+                        _moveYDirection = 1;
+                    }
+                    else
+                    {
+                        _moveYDirection = -1;
+                    }
+                }
+            }
+            Guard();
         }
         else
         {
@@ -72,22 +102,11 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    protected void FlyOrChase()
-    {
-        if (!_isPlayerInArea && !_ischasing)
-        {
-            Fly();
-        }
-        else
-        {
-            Chase();
-        }
-    }
-
-    protected void Walk()
+    protected void Guard()
     {
         if (_enemy_SO.ISDynamic)
         {
+            _animator.SetBool("isMoving", true);
             if (_destinationPos == _enemy_SO.MaxDetectableArea.x)
             {
                 _moveXDirection = -1;
@@ -108,66 +127,70 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
+            _animator.SetBool("isMoving", false);
             _moveYDirection = 0;
+            _moveXDirection = 0;
         }
     }
 
-    protected void Fly()
-    {
-        if (_enemy_SO.ISDynamic)
-        {
-            if (_destinationPos == _enemy_SO.MaxDetectableArea.x)
-            {
-                _moveXDirection = -1;
-            }
-            else
-            {
-                _moveXDirection = 1;
-            }
+    //protected void Fly()
+    //{
+    //    if (_enemy_SO.ISDynamic)
+    //    {
+    //        _animator.SetBool("isMoving", true);
+    //        if (_destinationPos == _enemy_SO.MaxDetectableArea.x)
+    //        {
+    //            _moveXDirection = -1;
+    //        }
+    //        else
+    //        {
+    //            _moveXDirection = 1;
+    //        }
 
-            if (transform.position.x <= _enemy_SO.MaxDetectableArea.x)
-            {
-                _destinationPos = _enemy_SO.MaxDetectableArea.y;
-            }
-            else if (transform.position.x >= _enemy_SO.MaxDetectableArea.y)
-            {
-                _destinationPos = _enemy_SO.MaxDetectableArea.x;
-            }
-        }
-        else
-        {
-            _moveYDirection = 0;
-        }
-    }
+    //        if (transform.position.x <= _enemy_SO.MaxDetectableArea.x)
+    //        {
+    //            _destinationPos = _enemy_SO.MaxDetectableArea.y;
+    //        }
+    //        else if (transform.position.x >= _enemy_SO.MaxDetectableArea.y)
+    //        {
+    //            _destinationPos = _enemy_SO.MaxDetectableArea.x;
+    //        }
+    //    }
+    //    else
+    //    {
+    //        _animator.SetBool("isMoving", false);
+    //        _moveYDirection = 0;
+    //        _moveXDirection = 0;
+    //    }
+    //}
 
     protected void Chase()
     {
-        _moveXDirection = 0;
+        Vector3 playerPos = PlayerController.Instance.gameObject.transform.position;
+        Vector3 myPos = transform.position;
+
         if (_enemy_SO.IsFLyer)
         {
-            //float myPos = transform.position.y;
-            //float playerPos = PlayerController.Instance.gameobject.transform.position.y;
-            //float toPos = myPos - playerPos;
-            //if (myPos > toPos)
-            //{
-            //    _moveYDirection = -1;
-            //}
-            //else
-            //{
-            //    _moveYDirection = 1;
-            //}
+            float toYPos = playerPos.y - myPos.y;
+            if (toYPos > 0)
+            {
+                _moveYDirection = 1;
+            }
+            else
+            {
+                _moveYDirection = -1;
+            }
         }
-        //float myPos = transform.position.x;
-        //float playerPos = PlayerController.Instance.gameobject.transform.position.x;
-        //float toPos = myPos - playerPos;
-        //if (myPos > toPos)
-        //{
-        //    _moveXDirection = -1;
-        //}
-        //else
-        //{
-        //    _moveXDirection = 1;
-        //}
+
+        float toXPos = playerPos.x - myPos.x;
+        if (toXPos > 0)
+        {
+            _moveXDirection = 1;
+        }
+        else
+        {
+            _moveXDirection = -1;
+        }
     }
     #endregion
 
@@ -242,18 +265,34 @@ public class EnemyController : MonoBehaviour
         _ischasing = false;
     }
 
-    protected void Die()
+    protected void Die(int damage)
     {
-        _ischasing = false;
-        _isPlayerInArea = false;
-        SFXController.Instance.Explosion(transform.position);
-        gameObject.SetActive(false);
+        _currentLife -= damage;
+        if (_currentLife == 0)
+        {
+            _ischasing = false;
+            _isPlayerInArea = false;
+            //SFXController.Instance.Explosion(transform.position);
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            StartCoroutine(Damage());
+        }
+    }
+
+    IEnumerator Damage()
+    {
+        _spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.25f);
+        _spriteRenderer.color = Color.white;
     }
 
     public void Spawn()
     {
         transform.position = _spawnPos;
         gameObject.SetActive(true);
+        _currentLife = _enemy_SO.Life;
     }
 
     void OnDrawGizmosSelected()

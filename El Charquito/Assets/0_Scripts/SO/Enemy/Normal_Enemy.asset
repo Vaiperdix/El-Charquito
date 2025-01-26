@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ac8898a0414774bb89e92744782297, type: 3}
   m_Name: Normal_Enemy
   m_EditorClassIdentifier: 
-  _animatorOverrideController: {fileID: 0}
-  _isFLyer: 1
+  _isFLyer: 0
   _isDynamic: 1
   _moveSpeed: 5
   _maxDetectableArea: {x: -5, y: 5}
-  _chaseTime: 0
+  _chaseTime: 5
+  _life: 1
