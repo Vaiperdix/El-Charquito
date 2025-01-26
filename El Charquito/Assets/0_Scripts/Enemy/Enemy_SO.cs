@@ -11,6 +11,7 @@ public class Enemy_SO : ScriptableObject
 
     [Header("Attack")]
     [SerializeField] float _chaseTime = 0;
+    [SerializeField] int _life = 0;
 
     public bool IsFLyer { get { return _isFLyer; } }
     public bool ISDynamic { get { return _isDynamic; } }
@@ -18,4 +19,5 @@ public class Enemy_SO : ScriptableObject
     public Vector2 MaxDetectableArea { get { return _maxDetectableArea; } }
 
     public float ChaseTime { get { return _chaseTime; } }
+    public int Life { get { return _life; } }
 }
