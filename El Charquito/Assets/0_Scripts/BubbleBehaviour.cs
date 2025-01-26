@@ -1,16 +1,53 @@
+using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class BubbleBehaviour : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] float _force;
+    [SerializeField] float _torque;
+    float _movementDirection = 0;
+    Rigidbody2D _rigidbody2D;
+
+    void Awake()
     {
-        
+        _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        
+        _rigidbody2D.AddForceX(_force * _movementDirection, ForceMode2D.Impulse);
+        _rigidbody2D.AddTorque(_torque * _movementDirection, ForceMode2D.Impulse);
+        StartCoroutine(Timer());
+    }
+
+    IEnumerator Timer()
+    {
+        yield return new WaitForSeconds(3);
+        DestryBubble();
+    }
+
+    public void shootBubble(Vector3 pos, int direction)
+    {
+        _movementDirection = direction;
+        transform.position = pos + (Vector3.right * direction);
+        gameObject.SetActive(true);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        DestryBubble();
+    }
+
+    void DestryBubble()
+    {
+        StartCoroutine(DestroyB());
+    }
+
+    IEnumerator DestroyB()
+    {
+        //explosion
+        yield return new WaitForSeconds(0.15f);
+        gameObject.SetActive(false);
     }
 }
