@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: 19ec6a3e9120e9f458cd5bd55442cdbe
+guid: a50c8be87db954a4185fb234a0e90208
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5830694933855508796
-    second: Enemy1_0
+      213: 1644808063397411298
+    second: liquido_0
   - first:
-      213: 2257999382807605110
-    second: Enemy1_1
+      213: -3954593918407243644
+    second: liquido_1
   - first:
-      213: 8579933983931842467
-    second: Enemy1_2
+      213: 3905290382927104464
+    second: liquido_2
   - first:
-      213: 1723005811108047852
-    second: Enemy1_3
+      213: 2740024401097777580
+    second: liquido_3
   - first:
-      213: -4883992831217675976
-    second: Enemy1_4
-  - first:
-      213: -8404099027125124158
-    second: Enemy1_5
+      213: 1791421014925676363
+    second: liquido_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -141,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy1_0
+      name: liquido_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c399026662acae050800000000000000
-      internalID: 5830694933855508796
+      spriteID: 2e93086183883d610800000000000000
+      internalID: 1644808063397411298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1_1
+      name: liquido_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 80
         y: 0
-        width: 64
-        height: 64
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67f6c4ba976065f10800000000000000
-      internalID: 2257999382807605110
+      spriteID: 4888a6698c57e19c0800000000000000
+      internalID: -3954593918407243644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy1_2
+      name: liquido_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 160
         y: 0
-        width: 64
-        height: 64
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,30 +197,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3af3f8cff7c021770800000000000000
-      internalID: 8579933983931842467
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy1_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ceb670508a859e710800000000000000
-      internalID: 1723005811108047852
+      spriteID: 0d98e1389e0623630800000000000000
+      internalID: 3905290382927104464
       vertices: []
       indices: 
       edges: []
@@ -232,7 +207,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 1e4d57ba34932fd4aba545bbb72e0f78
     internalID: 0
     vertices: []
     indices: 
@@ -242,10 +217,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Enemy1_0: 5830694933855508796
-      Enemy1_1: 2257999382807605110
-      Enemy1_2: 8579933983931842467
-      Enemy1_3: 1723005811108047852
+      liquido_0: 1644808063397411298
+      liquido_1: -3954593918407243644
+      liquido_2: 3905290382927104464
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
