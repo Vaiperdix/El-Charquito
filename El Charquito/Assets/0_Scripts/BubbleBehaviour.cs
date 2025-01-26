@@ -9,17 +9,22 @@ public class BubbleBehaviour : MonoBehaviour
     float _movementDirection = 0;
     Rigidbody2D _rigidbody2D;
     Animator _animator;
+    [SerializeField] AudioSource _bubbleSoundSource;
+    [SerializeField] AudioClip _bubbleSound;
 
     void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+        _bubbleSoundSource.clip = _bubbleSound;
+        _bubbleSoundSource.volume = 0.4f;
     }
 
     private void OnEnable()
     {
         _rigidbody2D.AddForceX(_force * _movementDirection, ForceMode2D.Impulse);
         _rigidbody2D.AddTorque(_torque * _movementDirection, ForceMode2D.Impulse);
+        _bubbleSoundSource.Play();
         StartCoroutine(Timer());
     }
 
