@@ -16,9 +16,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] bool _onAirMarker = false;
     private float _moveSpeed;
     private int _accelerationState;
-    [SerializeField] ObjectPooler _bubblesPool;
     private int _lookingDirection;
 
+    SpriteRenderer _spriteRenderer;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
 
     private void shooting()
     {
-        BubbleBehaviour bubble = _bubblesPool.GetPooledObject();
+        BubbleBehaviour bubble = ObjectPooler.Instance.GetPooledObject();
         bubble.shootBubble(transform.position, _lookingDirection);
     }
 
@@ -43,6 +43,8 @@ public class PlayerController : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            _rigidbody2D = GetComponent<Rigidbody2D>();
+            _spriteRenderer = GetComponent<SpriteRenderer>();
         }
         else
         {
@@ -50,11 +52,6 @@ public class PlayerController : MonoBehaviour
         }
         _moveSpeed = _originalMoveSpeed;
         _accelerationState = 0;
-    }
-
-    private void Start()
-    {
-        _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -70,12 +67,13 @@ public class PlayerController : MonoBehaviour
             {
                 _modeDirection = -1;
                 _lookingDirection = -1;
-
+                _spriteRenderer.flipX = true;
             }
             else if (Input.GetKey(KeyCode.D))
             {
                 _modeDirection = 1;
                 _lookingDirection = 1;
+                _spriteRenderer.flipX = false;
             }
             else
             {

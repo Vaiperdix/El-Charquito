@@ -8,10 +8,12 @@ public class BubbleBehaviour : MonoBehaviour
     [SerializeField] float _torque;
     float _movementDirection = 0;
     Rigidbody2D _rigidbody2D;
+    Animator _animator;
 
     void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
     }
 
     private void OnEnable()
@@ -34,8 +36,9 @@ public class BubbleBehaviour : MonoBehaviour
         gameObject.SetActive(true);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
+        _rigidbody2D.linearVelocityX = 0;
         DestryBubble();
     }
 
@@ -46,8 +49,8 @@ public class BubbleBehaviour : MonoBehaviour
 
     IEnumerator DestroyB()
     {
-        //explosion
-        yield return new WaitForSeconds(0.15f);
+        _animator.Play("DestroyB");
+        yield return new WaitForSeconds(0.33f);
         gameObject.SetActive(false);
     }
 }
