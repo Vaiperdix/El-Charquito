@@ -44,15 +44,7 @@ public class EnemyController : MonoBehaviour
         _destinationPos = _enemy_SO.MaxDetectableArea.x;
         // Asignar la LayerMask utilizando el nombre del layer
         _layerMask = 1 << LayerMask.NameToLayer(_playerLayerName);
-
-        if (_enemy_SO.MaxDetectableArea.x >= 0)
-        {
-            _distance = _enemy_SO.MaxDetectableArea.y - _enemy_SO.MaxDetectableArea.x;
-        }
-        else
-        {
-            _distance = _enemy_SO.MaxDetectableArea.y + Math.Abs(_enemy_SO.MaxDetectableArea.x);
-        }
+        _distance = _enemy_SO.MaxDetectableArea.y;
 
         if (!_enemy_SO.IsFLyer)
         {
@@ -72,12 +64,12 @@ public class EnemyController : MonoBehaviour
         {
             if (!_enemy_SO.IsFLyer)
             {
-                if (transform.position.y != _spawnPos.y)
-                {
-                    Vector3 pos = transform.position;
-                    pos.y = _spawnPos.y;
-                    transform.position = pos;
-                }
+                //if (transform.position.y != _spawnPos.y)
+                //{
+                //    Vector3 pos = transform.position;
+                //    pos.y = _spawnPos.y;
+                //    transform.position = pos;
+                //}
             }
             else
             {
@@ -217,6 +209,7 @@ public class EnemyController : MonoBehaviour
     void EarthAreaDetector()
     {
         _hit = Physics2D.Raycast(_origin, Vector2.right, _distance, _layerMask);
+        Debug.Log(_distance);
         if (_hit.collider != null)
         {
             if (!_isPlayerInArea)
@@ -268,7 +261,7 @@ public class EnemyController : MonoBehaviour
     protected void Die(int damage)
     {
         _currentLife -= damage;
-        if (_currentLife == 0)
+        if (_currentLife <= 0)
         {
             _ischasing = false;
             _isPlayerInArea = false;
