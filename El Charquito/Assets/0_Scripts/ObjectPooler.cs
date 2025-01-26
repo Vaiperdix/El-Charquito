@@ -6,9 +6,8 @@ public class ObjectPooler : MonoBehaviour
 {
     public GameObject prefab;
     [SerializeField] int _poolSize;
-    private List<GameObject> _pool = new List<GameObject>();
+    private List<BubbleBehaviour> _pool = new List<BubbleBehaviour>();
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         initializePool();
@@ -20,19 +19,20 @@ public class ObjectPooler : MonoBehaviour
             _pool.Add(createNewObj());
         }
     }
-    public GameObject GetPooledObject()
+    public BubbleBehaviour GetPooledObject()
     {
-        foreach(GameObject obj in _pool)
+        foreach(BubbleBehaviour obj in _pool)
         {
-            if (!obj.activeInHierarchy) 
+            if (!obj.gameObject.activeInHierarchy) 
                 return obj;
         }
         return createNewObj();
     }
-    private GameObject createNewObj()
+    private BubbleBehaviour createNewObj()
     {
         GameObject obj = Instantiate(prefab,transform);
+        BubbleBehaviour bubbleBehaviour = obj.GetComponent<BubbleBehaviour>();
         obj.SetActive(false);
-        return obj;
+        return bubbleBehaviour;
     }
 }

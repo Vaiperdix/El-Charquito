@@ -214,6 +214,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb07aa5558307e45a63b7925cfe9bd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1559039939 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3729686267245089214, guid: b5ee9f978f23f3c428410a973525ec95, type: 3}
+  m_PrefabInstance: {fileID: 2734410589583697526}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1644262580
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,7 +233,7 @@ GameObject:
   - component: {fileID: 1644262584}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Enviroment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -428,6 +433,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5210072577594496473, guid: 6aec072e0d556de4ab4f440a85718f9c, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1559039939}
     - target: {fileID: 5749219313175447070, guid: 6aec072e0d556de4ab4f440a85718f9c, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -508,15 +517,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1357647183340852857, guid: 9fa2ac5878b52c94abdf173cdeacbac2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.9287786
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1357647183340852857, guid: 9fa2ac5878b52c94abdf173cdeacbac2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.48253807
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1357647183340852857, guid: 9fa2ac5878b52c94abdf173cdeacbac2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.06730088
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1357647183340852857, guid: 9fa2ac5878b52c94abdf173cdeacbac2, type: 3}
       propertyPath: m_LocalRotation.w

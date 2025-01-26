@@ -18,26 +18,26 @@ public class PlayerController : MonoBehaviour
     private int _accelerationState;
     [SerializeField] ObjectPooler _bubblesPool;
     private int _lookingDirection;
-    
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        _onAirMarker = false;
+        if (collision.collider != null && collision.collider.CompareTag("Enviroment"))
+            _onAirMarker = false;
     }
-    private bool sameDirection(){
-        if ( ((_modeDirection==-1)&&(Input.GetKey(KeyCode.A))) || ((_modeDirection==0)&&(!Input.GetKey(KeyCode.A))&&(!Input.GetKey(KeyCode.D))) || ((_modeDirection==1)&&(Input.GetKey(KeyCode.D))))
+    private bool sameDirection()
+    {
+        if (((_modeDirection == -1) && (Input.GetKey(KeyCode.A))) || ((_modeDirection == 0) && (!Input.GetKey(KeyCode.A)) && (!Input.GetKey(KeyCode.D))) || ((_modeDirection == 1) && (Input.GetKey(KeyCode.D))))
             return true;
         return false;
     }
 
-    private void shooting(){
-        GameObject bubble = _bubblesPool.GetPooledObject();
-        bubble.transform.position = transform.position;
-        bubble.SetActive(true);
-        BubbleBehaviour script = bubble.GetComponent<BubbleBehaviour>();
-        script.shootBubble(_lookingDirection);
+    private void shooting()
+    {
+        BubbleBehaviour bubble = _bubblesPool.GetPooledObject();
+        bubble.shootBubble(transform.position, _lookingDirection);
     }
-    
+
     private void Awake()
     {
         if (Instance == null)
@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (_accelerationState<_accelerationLimit && sameDirection())
+        if (_accelerationState < _accelerationLimit && sameDirection())
         {
             _moveSpeed = _moveSpeed + _speedIncrease;
             _accelerationState++;
@@ -84,11 +84,11 @@ public class PlayerController : MonoBehaviour
             _moveSpeed = _originalMoveSpeed;
             _accelerationState = 0;
         }
-        if (Input.GetKey(KeyCode.W)&&!_onAirMarker)
+        if (Input.GetKeyDown(KeyCode.W) && !_onAirMarker)
         {
             _jumpMarker = true;
         }
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             shooting();
         }

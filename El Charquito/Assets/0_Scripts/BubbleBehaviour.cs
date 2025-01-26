@@ -1,47 +1,53 @@
+using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class BubbleBehaviour : MonoBehaviour
 {
-    private int _movementDirection;
-    [SerializeField] float _originalMoveSpeedX; 
-    private float _moveSpeedX;
-    [SerializeField] float _speedDecreaseX;
-    [SerializeField] float _originalMoveSpeedY;
-    private float _moveSpeedY;
-    private int _oscilationState;
+    [SerializeField] float _force;
+    [SerializeField] float _torque;
+    float _movementDirection = 0;
     Rigidbody2D _rigidbody2D;
-    
-     private void OnTriggerEnter2D(Collider2D collision)
-    {
-        gameObject.SetActive(false);
-    }
+
     void Awake()
     {
-        _moveSpeedX = _originalMoveSpeedX;
-        _moveSpeedY = _originalMoveSpeedY; 
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _oscilationState = 1;
-        
     }
 
-    void Update()
+    private void OnEnable()
     {
-        if(gameObject.activeSelf)
-        {
-
-        }
+        _rigidbody2D.AddForceX(_force * _movementDirection, ForceMode2D.Impulse);
+        _rigidbody2D.AddTorque(_torque * _movementDirection, ForceMode2D.Impulse);
+        StartCoroutine(Timer());
     }
 
-    public void shootBubble(int direction)
+    IEnumerator Timer()
     {
-        _rigidbody2D = GetComponent<Rigidbody2D>();
-        _rigidbody2D.linearVelocityX = direction * _moveSpeedX;
-        _rigidbody2D.linearVelocityY = _moveSpeedY;
+        yield return new WaitForSeconds(3);
+        DestryBubble();
+    }
+
+    public void shootBubble(Vector3 pos, int direction)
+    {
         _movementDirection = direction;
+        transform.position = pos + (Vector3.right * direction);
+        gameObject.SetActive(true);
+    }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        DestryBubble();
+    }
+
+    void DestryBubble()
+    {
+        StartCoroutine(DestroyB());
+    }
+
+    IEnumerator DestroyB()
+    {
+        //explosion
+        yield return new WaitForSeconds(0.15f);
+        gameObject.SetActive(false);
     }
 }
