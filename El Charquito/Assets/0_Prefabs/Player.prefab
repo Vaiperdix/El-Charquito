@@ -50,8 +50,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _originalMoveSpeed: 2
   _speedIncrease: 0.3
-  _accelerationLimit: 90
-  _jumpSpeed: 3
+  _accelerationLimit: 50
+  _jumpSpeed: 5
   _onAirMarker: 0
 --- !u!212 &3485769854153055341
 SpriteRenderer:

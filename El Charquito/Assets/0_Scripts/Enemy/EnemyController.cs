@@ -60,37 +60,40 @@ public class EnemyController : MonoBehaviour
     #region Update
     protected void GuardOrChase()
     {
-        if (!_isPlayerInArea && !_ischasing)
+        if (Time.timeScale == 1)
         {
-            if (!_enemy_SO.IsFLyer)
+            if (!_isPlayerInArea && !_ischasing)
             {
-                //if (transform.position.y != _spawnPos.y)
-                //{
-                //    Vector3 pos = transform.position;
-                //    pos.y = _spawnPos.y;
-                //    transform.position = pos;
-                //}
+                if (!_enemy_SO.IsFLyer)
+                {
+                    //if (transform.position.y != _spawnPos.y)
+                    //{
+                    //    Vector3 pos = transform.position;
+                    //    pos.y = _spawnPos.y;
+                    //    transform.position = pos;
+                    //}
+                }
+                else
+                {
+                    {
+                        Vector3 myPos = transform.position;
+                        float toYPos = _spawnPos.y - myPos.y;
+                        if (toYPos > 0)
+                        {
+                            _moveYDirection = 1;
+                        }
+                        else
+                        {
+                            _moveYDirection = -1;
+                        }
+                    }
+                }
+                Guard();
             }
             else
             {
-                {
-                    Vector3 myPos = transform.position;
-                    float toYPos = _spawnPos.y - myPos.y;
-                    if (toYPos > 0)
-                    {
-                        _moveYDirection = 1;
-                    }
-                    else
-                    {
-                        _moveYDirection = -1;
-                    }
-                }
+                Chase();
             }
-            Guard();
-        }
-        else
-        {
-            Chase();
         }
     }
 
@@ -120,41 +123,9 @@ public class EnemyController : MonoBehaviour
         else
         {
             _animator.SetBool("isMoving", false);
-            _moveYDirection = 0;
-            _moveXDirection = 0;
+            transform.position = _spawnPos;
         }
     }
-
-    //protected void Fly()
-    //{
-    //    if (_enemy_SO.ISDynamic)
-    //    {
-    //        _animator.SetBool("isMoving", true);
-    //        if (_destinationPos == _enemy_SO.MaxDetectableArea.x)
-    //        {
-    //            _moveXDirection = -1;
-    //        }
-    //        else
-    //        {
-    //            _moveXDirection = 1;
-    //        }
-
-    //        if (transform.position.x <= _enemy_SO.MaxDetectableArea.x)
-    //        {
-    //            _destinationPos = _enemy_SO.MaxDetectableArea.y;
-    //        }
-    //        else if (transform.position.x >= _enemy_SO.MaxDetectableArea.y)
-    //        {
-    //            _destinationPos = _enemy_SO.MaxDetectableArea.x;
-    //        }
-    //    }
-    //    else
-    //    {
-    //        _animator.SetBool("isMoving", false);
-    //        _moveYDirection = 0;
-    //        _moveXDirection = 0;
-    //    }
-    //}
 
     protected void Chase()
     {
@@ -283,6 +254,8 @@ public class EnemyController : MonoBehaviour
 
     public void Spawn()
     {
+        _ischasing = false;
+        _isPlayerInArea = false;
         transform.position = _spawnPos;
         gameObject.SetActive(true);
         _currentLife = _enemy_SO.Life;

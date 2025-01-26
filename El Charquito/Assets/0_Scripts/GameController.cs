@@ -1,5 +1,7 @@
+using System.Collections;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
@@ -19,12 +21,16 @@ public class GameController : MonoBehaviour
     bool _isGameOver = false;
     int _totalLifes = 3;
 
+    [SerializeField] Enemy[] _enemies;
+
+    [System.Obsolete]
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
             _isPause = false;
+            _enemies = FindObjectsOfType<Enemy>();
         }
         else
         {
@@ -85,14 +91,33 @@ public class GameController : MonoBehaviour
     {
         _totalLifes--;
         _uiController.Die(_totalLifes);
+        StartCoroutine(Die());
+    }
+
+    IEnumerator Die()
+    {
+        Time.timeScale = 0.1f;
+        yield return new WaitForSeconds(0.2f);
+        Time.timeScale = 0.95f;
+        foreach (Enemy enemy in _enemies)
+        {
+            enemy.Spawn();
+        }
+        yield return new WaitForSeconds(1f);
         if (_totalLifes == 0)
         {
+            Time.timeScale = 1f;
             GameOver();
+        }
+        else
+        {
+            PlayerController.Instance.Spawn(_lastCheckPoint);
+            Time.timeScale = 1f;
         }
     }
 
     void GameOver()
     {
-
+        SceneManager.LoadScene(0);
     }
 }
