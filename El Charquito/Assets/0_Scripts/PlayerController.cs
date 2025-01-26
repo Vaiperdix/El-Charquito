@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
             _moveSpeed = _originalMoveSpeed;
             _accelerationState = 0;
         }
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W)&&!_onAirMarker)
         {
             _jumpMarker = true;
         }
