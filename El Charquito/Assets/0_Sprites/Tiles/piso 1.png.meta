@@ -572,6 +572,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: piso 1_18
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d365ab9d73e6b4a4bac62c3fe093ee92
+      internalID: -1748346409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: piso 1_19
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bb8298acf40d64c95d786fe62e5336
+      internalID: 40700960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -596,6 +640,8 @@ TextureImporter:
       piso 1_15: -9000762118861195157
       piso 1_16: -7594543640117394989
       piso 1_17: 572479331937590534
+      piso 1_18: -1748346409
+      piso 1_19: 40700960
       piso 1_2: 6502360972780771248
       piso 1_3: -7596753697422043308
       piso 1_4: -6740743925575670268
