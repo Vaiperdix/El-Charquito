@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.1254902, g: 0.40392157, b: 0.654902, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -827,7 +827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.254717, g: 0.254717, b: 0.254717, a: 0.5019608}
+  m_Color: {r: 0.254717, g: 0.254717, b: 0.254717, a: 0.6431373}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1779,7 +1779,7 @@ GameObject:
   - component: {fileID: 866132713}
   - component: {fileID: 866132712}
   - component: {fileID: 866132711}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tilemap
   m_TagString: Enviroment
   m_Icon: {fileID: 0}
@@ -5363,7 +5363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1187291762394857336, guid: e2629d30a058e994ca99e9b088e8df62, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6042585
+      value: -2.59
       objectReference: {fileID: 0}
     - target: {fileID: 1187291762394857336, guid: e2629d30a058e994ca99e9b088e8df62, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5699,7 +5699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1187291762394857336, guid: e2629d30a058e994ca99e9b088e8df62, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.305741
+      value: 10.66
       objectReference: {fileID: 0}
     - target: {fileID: 1187291762394857336, guid: e2629d30a058e994ca99e9b088e8df62, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6474,6 +6474,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2471876304750798358, guid: b5ee9f978f23f3c428410a973525ec95, type: 3}
+      propertyPath: _jumpSpeed
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2690330577539626847, guid: b5ee9f978f23f3c428410a973525ec95, type: 3}
       propertyPath: m_Name
       value: Player
@@ -6724,7 +6728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1187291762394857336, guid: e2629d30a058e994ca99e9b088e8df62, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.3057413
+      value: 7.47
       objectReference: {fileID: 0}
     - target: {fileID: 1187291762394857336, guid: e2629d30a058e994ca99e9b088e8df62, type: 3}
       propertyPath: m_LocalPosition.z

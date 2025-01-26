@@ -106,9 +106,9 @@ public class PlayerController : MonoBehaviour
     {
         int _layerMask = 1 << LayerMask.NameToLayer("EnviromentLayer");
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.55f, _layerMask);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1.25f, _layerMask);
         // Dibujar el Raycast en la Scene view
-        Debug.DrawRay(transform.position, Vector2.down * 0.55f, hit.collider != null ? Color.red : Color.green);
+        Debug.DrawRay(transform.position, Vector2.down * 1.25f, hit.collider != null ? Color.red : Color.green);
         if (hit.collider != null)
         {
             return false;
