@@ -1,0 +1,558 @@
+fileFormatVersion: 2
+guid: 81ce16348e3e2f54f8607116823a711f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6062549014113736796
+    second: disparo normal Burbuja_0
+  - first:
+      213: -3624466536053342606
+    second: disparo normal Burbuja_1
+  - first:
+      213: -4802597171618348815
+    second: disparo normal Burbuja_2
+  - first:
+      213: -7633292602404188891
+    second: disparo normal Burbuja_3
+  - first:
+      213: 301339285795605430
+    second: disparo normal Burbuja_4
+  - first:
+      213: -7991806846977621529
+    second: disparo normal Burbuja_5
+  - first:
+      213: 7350994841670763010
+    second: disparo normal Burbuja_6
+  - first:
+      213: -7593562959538189705
+    second: disparo normal Burbuja_7
+  - first:
+      213: 9160735225350501941
+    second: disparo normal Burbuja_8
+  - first:
+      213: 3231151730783795750
+    second: disparo normal Burbuja_9
+  - first:
+      213: 109248587754213756
+    second: disparo normal Burbuja_10
+  - first:
+      213: -7318040435755181045
+    second: disparo normal Burbuja_11
+  - first:
+      213: 6255565857211180995
+    second: disparo normal Burbuja_12
+  - first:
+      213: 8158995278184267287
+    second: disparo normal Burbuja_13
+  - first:
+      213: -2394579805708396451
+    second: disparo normal Burbuja_14
+  - first:
+      213: -2794499604906026964
+    second: disparo normal Burbuja_15
+  - first:
+      213: 1453806557267480318
+    second: disparo normal Burbuja_16
+  - first:
+      213: -1998507891021743122
+    second: disparo normal Burbuja_17
+  - first:
+      213: 7915324791432607721
+    second: disparo normal Burbuja_18
+  - first:
+      213: -7275870434345855951
+    second: disparo normal Burbuja_19
+  - first:
+      213: 5119601841642279840
+    second: disparo normal Burbuja_20
+  - first:
+      213: -3298775394365414725
+    second: disparo normal Burbuja_21
+  - first:
+      213: 7954704653145444898
+    second: disparo normal Burbuja_22
+  - first:
+      213: 3580487209562141900
+    second: disparo normal Burbuja_23
+  - first:
+      213: -1331170792046339418
+    second: disparo normal Burbuja_24
+  - first:
+      213: 2401721359399443086
+    second: disparo normal Burbuja_25
+  - first:
+      213: -8724797041745047804
+    second: disparo normal Burbuja_26
+  - first:
+      213: 2794301508364720005
+    second: disparo normal Burbuja_27
+  - first:
+      213: 7554942503322625489
+    second: disparo normal Burbuja_28
+  - first:
+      213: 8563816418623697625
+    second: disparo normal Burbuja_29
+  - first:
+      213: 4617813967592211622
+    second: disparo normal Burbuja_30
+  - first:
+      213: -1846995221212795730
+    second: disparo normal Burbuja_31
+  - first:
+      213: 3063969919065778779
+    second: disparo normal Burbuja_32
+  - first:
+      213: -5515505445624288711
+    second: disparo normal Burbuja_33
+  - first:
+      213: -5365939883865013309
+    second: disparo normal Burbuja_34
+  - first:
+      213: -8450628968920639849
+    second: disparo normal Burbuja_35
+  - first:
+      213: 5188432719592665731
+    second: disparo normal Burbuja_36
+  - first:
+      213: 882968769400143423
+    second: disparo normal Burbuja_37
+  - first:
+      213: 5137417882423221869
+    second: disparo normal Burbuja_38
+  - first:
+      213: 5252425240686640087
+    second: disparo normal Burbuja_39
+  - first:
+      213: -2848672409661817350
+    second: disparo normal Burbuja_40
+  - first:
+      213: -5759601959393223094
+    second: disparo normal Burbuja_41
+  - first:
+      213: 4905150598497964467
+    second: disparo normal Burbuja_42
+  - first:
+      213: -8160011840539296224
+    second: disparo normal Burbuja_43
+  - first:
+      213: 7810884387414506594
+    second: disparo normal Burbuja_44
+  - first:
+      213: -8727028469533644577
+    second: disparo normal Burbuja_45
+  - first:
+      213: -9025697209459556149
+    second: disparo normal Burbuja_46
+  - first:
+      213: 115865506736964775
+    second: disparo normal Burbuja_47
+  - first:
+      213: -261137047528951051
+    second: disparo normal Burbuja_48
+  - first:
+      213: 1941261134718514976
+    second: disparo normal Burbuja_49
+  - first:
+      213: 6998429678310101745
+    second: disparo normal Burbuja_50
+  - first:
+      213: -8609246422989811196
+    second: disparo normal Burbuja_51
+  - first:
+      213: -7067725686264614221
+    second: disparo normal Burbuja_52
+  - first:
+      213: -2864281091775058551
+    second: disparo normal Burbuja_53
+  - first:
+      213: -996183227138900894
+    second: disparo normal Burbuja_54
+  - first:
+      213: -2317342071989870136
+    second: disparo normal Burbuja_55
+  - first:
+      213: 9108350139767670715
+    second: disparo normal Burbuja_56
+  - first:
+      213: 7032026596313489414
+    second: disparo normal Burbuja_57
+  - first:
+      213: -5107337429788482819
+    second: disparo normal Burbuja_58
+  - first:
+      213: 4864879882350072933
+    second: disparo normal Burbuja_59
+  - first:
+      213: -5269714310191315155
+    second: disparo normal Burbuja_60
+  - first:
+      213: -3066439348009272379
+    second: disparo normal Burbuja_61
+  - first:
+      213: -2285787789646820120
+    second: disparo normal Burbuja_62
+  - first:
+      213: -4058954658493209083
+    second: disparo normal Burbuja_63
+  - first:
+      213: 3988485145086245522
+    second: disparo normal Burbuja_64
+  - first:
+      213: 7215882709603654237
+    second: disparo normal Burbuja_65
+  - first:
+      213: -2531017692704060005
+    second: disparo normal Burbuja_66
+  - first:
+      213: -6905611576056318308
+    second: disparo normal Burbuja_67
+  - first:
+      213: -1553677510321741705
+    second: disparo normal Burbuja_68
+  - first:
+      213: -7951799394948712136
+    second: disparo normal Burbuja_69
+  - first:
+      213: -5376536945968266955
+    second: disparo normal Burbuja_70
+  - first:
+      213: -7422379271110168068
+    second: disparo normal Burbuja_71
+  - first:
+      213: -1392120538214322230
+    second: disparo normal Burbuja_72
+  - first:
+      213: 6986832858514990686
+    second: disparo normal Burbuja_73
+  - first:
+      213: 2010042022912574533
+    second: disparo normal Burbuja_74
+  - first:
+      213: -8273284309965638918
+    second: disparo normal Burbuja_75
+  - first:
+      213: -469081220513009629
+    second: disparo normal Burbuja_76
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: disparo normal Burbuja_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a72b5cdacf7ddba0800000000000000
+      internalID: -6062549014113736796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disparo normal Burbuja_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27eff3283ee43bdc0800000000000000
+      internalID: -3624466536053342606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disparo normal Burbuja_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f08462515fb95db0800000000000000
+      internalID: -4802597171618348815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disparo normal Burbuja_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52dc41f22d8111690800000000000000
+      internalID: -7633292602404188891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disparo normal Burbuja_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb87bedb729e2400800000000000000
+      internalID: 301339285795605430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disparo normal Burbuja_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e14d5cd306671190800000000000000
+      internalID: -7991806846977621529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disparo normal Burbuja_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 202c38b7cdaf30660800000000000000
+      internalID: 7350994841670763010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disparo normal Burbuja_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a892188be3e9690800000000000000
+      internalID: -7593562959538189705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 836775e9108978a47b51ce3dfb1a9a77
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      disparo normal Burbuja_0: -6062549014113736796
+      disparo normal Burbuja_1: -3624466536053342606
+      disparo normal Burbuja_2: -4802597171618348815
+      disparo normal Burbuja_3: -7633292602404188891
+      disparo normal Burbuja_4: 301339285795605430
+      disparo normal Burbuja_5: -7991806846977621529
+      disparo normal Burbuja_6: 7350994841670763010
+      disparo normal Burbuja_7: -7593562959538189705
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
