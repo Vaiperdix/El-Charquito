@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80ac8898a0414774bb89e92744782297, type: 3}
+  m_Script: {fileID: 11500000, guid: f508648074123b54f8cbfd3520b16656, type: 3}
   m_Name: Normal_Enemy 1
   m_EditorClassIdentifier: 
   _isFLyer: 0
-  _isDynamic: 1
-  _moveSpeed: 5
-  _maxDetectableArea: {x: 22, y: 33}
-  _chaseTime: 3
-  _life: 3
+  _isDynamic: 0
+  _moveSpeed: 1
+  _maxDetectableArea: {x: 0, y: 0}
+  _chaseTime: 0
+  _life: 1

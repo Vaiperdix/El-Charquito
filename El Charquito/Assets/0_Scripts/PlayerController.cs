@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
     SpriteRenderer _spriteRenderer;
     Animator _animator;
-    BoxCollider2D _collider;
+    CircleCollider2D _collider;
 
     private void Awake()
     {
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
             _rigidbody2D = GetComponent<Rigidbody2D>();
             _spriteRenderer = GetComponent<SpriteRenderer>();
             _animator = GetComponent<Animator>();
-            _collider = GetComponent<BoxCollider2D>();
+            _collider = GetComponent<CircleCollider2D>();
         }
         else
         {
@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.W) && !_onAirMarker)
             {
-                _animator.SetTrigger("jump");
+                //_animator.SetBool("jump 0", true);
                 _jumpMarker = true;
             }
             if (Input.GetKeyDown(KeyCode.Space))
@@ -100,6 +100,10 @@ public class PlayerController : MonoBehaviour
     private void LateUpdate()
     {
         _onAirMarker = IsGrounded();
+        if(_onAirMarker)
+            _animator.SetBool("jump 0", true);
+        else
+            _animator.SetBool("jump 0", false);
     }
 
     bool IsGrounded()

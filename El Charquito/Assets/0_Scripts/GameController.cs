@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     [SerializeField] UIController _uiController;
     bool _isPause = false;
 
-    [Header("Chcek Points")]
+    [Header("Check Points")]
     int _currentCheckPoint = -1;
     [SerializeField] CheckPoint[] _checkPoints;
     Vector3 _lastCheckPoint = Vector3.zero;

@@ -9,12 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f508648074123b54f8cbfd3520b16656, type: 3}
-  m_Name: Fly_Enemy
+  m_Script: {fileID: 11500000, guid: d5529dfdb62e84640b9e7281af9adb39, type: 3}
+  m_Name: ____Waking_Enemy 1
   m_EditorClassIdentifier: 
-  _isFLyer: 1
-  _isDynamic: 0
-  _moveSpeed: 1
-  _maxDetectableArea: {x: 0, y: 0}
-  _chaseTime: 0
-  _life: 1
+  _enemy_SO: {fileID: 0}

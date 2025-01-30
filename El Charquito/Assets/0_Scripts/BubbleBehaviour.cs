@@ -54,7 +54,7 @@ public class BubbleBehaviour : MonoBehaviour
 
     IEnumerator DestroyB()
     {
-        _animator.Play("DestroyB");
+        _animator.SetTrigger("DestroyB");
         yield return new WaitForSeconds(0.33f);
         gameObject.SetActive(false);
     }

@@ -160,7 +160,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.26, y: 0.36, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2314932974623203343}
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _force: 10
-  _torque: 5
+  _torque: 0
   _bubbleSoundSource: {fileID: 8451512655463284874}
   _bubbleSound: {fileID: 8300000, guid: 4cba2b0c8d3cb8c4197ac225e207cdf7, type: 3}
 --- !u!58 &6850213822216853338
@@ -272,7 +272,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.3
+  m_Radius: 0.5
 --- !u!50 &4866722866075022293
 Rigidbody2D:
   serializedVersion: 5
